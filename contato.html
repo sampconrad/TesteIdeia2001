@@ -24,12 +24,12 @@
   <header id="header-contato">
     <a href="/index.html">
       <button id="arrow-btn">
-        <img src="/img/arrow-left.svg" alt="">
+        <img src="./img/arrow-left.svg" alt="">
       </button>
     </a>
-    <a id="header-logo" href="/index.html"><img src="/img/logo-header.svg" alt=""></a>
+    <a id="header-logo" href="/index.html"><img src="./img/logo-header.svg" alt=""></a>
     <div class="cart-btn-container">
-      <button id="cart-btn"><img src="/img/icon-cart.svg" alt=""><span id="cart-count">1</span></button>
+      <button id="cart-btn"><img src="./img/icon-cart.svg" alt=""><span id="cart-count">1</span></button>
     </div>
     <button class="header-menu-btn" onclick="menutoggle()">
       <img src="./img/menu-icon.svg" alt="menu-icon">
@@ -47,18 +47,19 @@
   <main id="main-contato-wrapper">
     <section id="head-contato">Contato</section>
     <ul id="list-contato">
-      <li class="list-contato-item"><img src="/img/icone-contato-endereco.svg" alt="">Rua Amazonas, 363 - Sala 95 <br />
+      <li class="list-contato-item"><img src="./img/icone-contato-endereco.svg" alt="">Rua Amazonas, 363 - Sala 95
+        <br />
         São Caetano do Sul - SP - Brasil</li>
-      <li class="list-contato-item"><img src="/img/icone-contato-telefone.svg" alt="">+55 11 2917-5277</li>
-      <li class="list-contato-item"><img src="/img/icone-contato-site.svg" alt="">www.ideia2001.com.br</li>
-      <li class="list-contato-item"><img src="/img/icone-contato-email.svg" alt="">contato@ideia2001.com.br</li>
+      <li class="list-contato-item"><img src="./img/icone-contato-telefone.svg" alt="">+55 11 2917-5277</li>
+      <li class="list-contato-item"><img src="./img/icone-contato-site.svg" alt="">www.ideia2001.com.br</li>
+      <li class="list-contato-item"><img src="./img/icone-contato-email.svg" alt="">contato@ideia2001.com.br</li>
     </ul>
     <section id="contato-socials">
-      <a href=""><img src="/img/icon-fb.svg" alt=""></a>
-      <a href=""><img src="/img/icon-wa.svg" alt=""></a>
-      <a href=""><img src="/img/icon-ig.svg" alt=""></a>
-      <a href=""><img src="/img/icon-ln.svg" alt=""></a>
-      <a href=""><img src="/img/icon-yt.svg" alt=""></a>
+      <a href=""><img src="./img/icon-fb.svg" alt=""></a>
+      <a href=""><img src="./img/icon-wa.svg" alt=""></a>
+      <a href=""><img src="./img/icon-ig.svg" alt=""></a>
+      <a href=""><img src="./img/icon-ln.svg" alt=""></a>
+      <a href=""><img src="./img/icon-yt.svg" alt=""></a>
     </section>
   </main>
 
@@ -68,77 +69,6 @@
   </footer>
 
   <!-- JS IMPORT -->
-  <script>
-  // TOGGLE HAMBURGER MENU FUNCTION
-  let MenuItems = document.getElementById('MenuItems');
-  MenuItems.style.maxHeight = '0px';
-  function menutoggle() {
-    if (MenuItems.style.maxHeight == '0px') {
-      MenuItems.style.maxHeight = '200px';
-    } else {
-      MenuItems.style.maxHeight = '0px';
-    }
-  }
-
-  // LOCALIZATION
-  const toggleSwitch = document.querySelector('select');
-
-  // PROTUGUESE LOCALIZATION
-  function languagePT() {
-    document.getElementById('lang-btn-txt').innerHTML = `Idioma`;
-    document.getElementById('nav-item-inicio').innerHTML = `Início`;
-    document.getElementById('nav-item-contato').innerHTML = `Contato`;
-    document.getElementById(
-      'main-menu-pesquisar'
-    ).innerHTML = `Pesquisar produtos`;
-    document.getElementById('main-menu-lançamentos').innerHTML = `Lançamentos`;
-    document.getElementById('main-menu-carrinho').innerHTML = `Carrinho`;
-    document.getElementById('main-menu-contato').innerHTML = `Contato`;
-  }
-
-  // ENGLISH LOCALIZATION
-  function languageEN() {
-    document.getElementById('lang-btn-txt').innerHTML = `Language`;
-    document.getElementById('nav-item-inicio').innerHTML = `Home`;
-    document.getElementById('nav-item-contato').innerHTML = `Contact`;
-    document.getElementById('main-menu-pesquisar').innerHTML = `Search products`;
-    document.getElementById('main-menu-lançamentos').innerHTML = `New releases`;
-    document.getElementById('main-menu-carrinho').innerHTML = `Cart`;
-    document.getElementById('main-menu-contato').innerHTML = `Contact`;
-  }
-
-  // Switch Language Theme Dynamically
-  function switchTheme(event) {
-    if (event.target.value === 'PT-BR') {
-      localStorage.setItem('theme', event.target.value);
-      document.getElementById('flag').setAttribute('src', '/img/flag-br.svg');
-      languagePT();
-    } else {
-      document.documentElement.setAttribute('data-theme', 'EN-US');
-      localStorage.setItem('theme', event.target.value);
-      document.getElementById('flag').setAttribute('src', '/img/flag-us.svg');
-      languageEN();
-    }
-  }
-
-  // Event Listener
-  toggleSwitch.addEventListener('change', switchTheme);
-
-  // Set local storage and check Local Storage For selected language on load
-  const currentTheme = localStorage.getItem('theme');
-  if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    if (currentTheme === 'PT-BR') {
-      toggleSwitch.selected === 'PT-BR';
-      document.getElementById('flag').setAttribute('src', '/img/flag-br.svg');
-      languagePT();
-    } else {
-      toggleSwitch.selected === 'EN-US';
-      document.getElementById('flag').setAttribute('src', '/img/flag-us.svg');
-      languageEN();
-    }
-  }
-    
-  </script>
+  <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
