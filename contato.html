@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="favicon.svg" />
+  <title>Ideia2001 | Conrado Sampaio</title>
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header-contato">
+    <a href="/index.html">
+      <button id="arrow-btn">
+        <img src="/img/arrow-left.svg" alt="">
+      </button>
+    </a>
+    <a id="header-logo" href="/index.html"><img src="/img/logo-header.svg" alt=""></a>
+    <div class="cart-btn-container">
+      <button id="cart-btn"><img src="/img/icon-cart.svg" alt=""><span id="cart-count">1</span></button>
+    </div>
+    <button class="header-menu-btn" onclick="menutoggle()">
+      <img src="./img/menu-icon.svg" alt="menu-icon">
+    </button>
+  </header>
+  <!-- Header menu -->
+  <nav id="menu-dropdown">
+    <ul id="MenuItems">
+      <li class="nav-item"><a id="nav-item-inicio" href="index.html">Início</a></li>
+      <li class="nav-item"><a id="nav-item-contato" href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN SECTION -->
+  <main id="main-contato-wrapper">
+    <section id="head-contato">Contato</section>
+    <ul id="list-contato">
+      <li class="list-contato-item"><img src="/img/icone-contato-endereco.svg" alt="">Rua Amazonas, 363 - Sala 95 <br />
+        São Caetano do Sul - SP - Brasil</li>
+      <li class="list-contato-item"><img src="/img/icone-contato-telefone.svg" alt="">+55 11 2917-5277</li>
+      <li class="list-contato-item"><img src="/img/icone-contato-site.svg" alt="">www.ideia2001.com.br</li>
+      <li class="list-contato-item"><img src="/img/icone-contato-email.svg" alt="">contato@ideia2001.com.br</li>
+    </ul>
+    <section id="contato-socials">
+      <a href=""><img src="/img/icon-fb.svg" alt=""></a>
+      <a href=""><img src="/img/icon-wa.svg" alt=""></a>
+      <a href=""><img src="/img/icon-ig.svg" alt=""></a>
+      <a href=""><img src="/img/icon-ln.svg" alt=""></a>
+      <a href=""><img src="/img/icon-yt.svg" alt=""></a>
+    </section>
+  </main>
+
+  <!-- CONTATO FOOTER -->
+  <footer id="contato-footer">
+    Fale conosco
+  </footer>
+
+  <!-- JS IMPORT -->
+  <script src="/script.js" type="text/javascript"></script>
+</body>
+</html>
