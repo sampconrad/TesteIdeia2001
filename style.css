@@ -48,6 +48,7 @@ a {
 	font-weight: 400;
 	color: #444242;
 	border: none;
+	cursor: pointer;
 }
 #lang-btn img {
 	width: 24px;
@@ -62,6 +63,7 @@ a {
 #arrow-btn {
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
 #arrow-btn img {
 	width: 20px;
@@ -71,6 +73,7 @@ a {
 #header-logo {
 	margin-left: auto;
 	margin-right: auto;
+	cursor: pointer;
 }
 
 .cart-btn-container {
@@ -82,6 +85,7 @@ a {
 	background-color: transparent;
 	border: none;
 	position: relative;
+	cursor: pointer;
 }
 
 #cart-btn span {
@@ -103,6 +107,7 @@ a {
 .header-menu-btn {
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
 
 .header-menu-btn img {
@@ -136,6 +141,7 @@ a {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	transition: 0.2s;
+	cursor: pointer;
 }
 
 .nav-item:hover {
@@ -192,6 +198,7 @@ a {
 	border: 1px solid #fa9401;
 	transition: 0.2s;
 	margin: 7.5px;
+	cursor: pointer;
 }
 
 .mainmenu-btn:hover {
@@ -275,6 +282,7 @@ a {
 	color: white;
 	font-weight: 700;
 	font-size: 16px;
+	cursor: pointer;
 }
 
 /* Spacing icons without using gap */

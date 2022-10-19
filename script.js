@@ -40,12 +40,12 @@ function languageEN() {
 function switchTheme(event) {
 	if (event.target.value === 'PT-BR') {
 		localStorage.setItem('theme', event.target.value);
-		document.getElementById('flag').setAttribute('src', '/img/flag-br.svg');
+		document.getElementById('flag').setAttribute('src', './img/flag-br.svg');
 		languagePT();
 	} else {
 		document.documentElement.setAttribute('data-theme', 'EN-US');
 		localStorage.setItem('theme', event.target.value);
-		document.getElementById('flag').setAttribute('src', '/img/flag-us.svg');
+		document.getElementById('flag').setAttribute('src', './img/flag-us.svg');
 		languageEN();
 	}
 }
@@ -59,11 +59,11 @@ if (currentTheme) {
 	document.documentElement.setAttribute('data-theme', currentTheme);
 	if (currentTheme === 'PT-BR') {
 		toggleSwitch.selected === 'PT-BR';
-		document.getElementById('flag').setAttribute('src', '/img/flag-br.svg');
+		document.getElementById('flag').setAttribute('src', './img/flag-br.svg');
 		languagePT();
 	} else {
 		toggleSwitch.selected === 'EN-US';
-		document.getElementById('flag').setAttribute('src', '/img/flag-us.svg');
+		document.getElementById('flag').setAttribute('src', './img/flag-us.svg');
 		languageEN();
 	}
 }
