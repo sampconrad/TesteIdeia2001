@@ -10,9 +10,7 @@ function menutoggle() {
 }
 
 // LOCALIZATION
-const toggleSwitch = document.querySelector('select');
-
-// PROTUGUESE LOCALIZATION
+// PROTUGUESE CONTENT
 function languagePT() {
 	document.getElementById('flag').setAttribute('src', './img/flagbr.jpg');
 	document.getElementById('lang-btn-txt').innerHTML = `Idioma`;
@@ -26,7 +24,7 @@ function languagePT() {
 	document.getElementById('main-menu-contato').innerHTML = `Contato`;
 }
 
-// ENGLISH LOCALIZATION
+// ENGLISH CONTENT
 function languageEN() {
 	document.getElementById('flag').setAttribute('src', './img/flagus.jpg');
 	document.getElementById('lang-btn-txt').innerHTML = `Language`;
@@ -38,7 +36,7 @@ function languageEN() {
 	document.getElementById('main-menu-contato').innerHTML = `Contact`;
 }
 
-// Switch Language Theme Dynamically
+// Switch Language Theme Dynamically & Set local storage for future visits
 function switchTheme(event) {
 	if (event.target.value === 'PT-BR') {
 		localStorage.setItem('theme', event.target.value);
@@ -50,10 +48,11 @@ function switchTheme(event) {
 	}
 }
 
-// Event Listener
+// Event Listener for select change
+const toggleSwitch = document.querySelector('select');
 toggleSwitch.addEventListener('change', switchTheme);
 
-// Set local storage and check Local Storage For selected language on load
+// Check Local Storage for selected language on load
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
 	document.documentElement.setAttribute('data-theme', currentTheme);
