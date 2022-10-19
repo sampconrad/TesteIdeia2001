@@ -303,7 +303,7 @@ select {
 	cursor: inherit;
 	line-height: inherit;
 	outline: none;
-	background-image: url('/img/chevron.svg');
+	background-image: url('./img/chevron.svg');
 	background-repeat: no-repeat;
 	background-position-x: 100%;
 	background-position-y: 5px;

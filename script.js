@@ -14,6 +14,7 @@ const toggleSwitch = document.querySelector('select');
 
 // PROTUGUESE LOCALIZATION
 function languagePT() {
+	document.getElementById('flag').setAttribute('src', './img/flagbr.jpg');
 	document.getElementById('lang-btn-txt').innerHTML = `Idioma`;
 	document.getElementById('nav-item-inicio').innerHTML = `Início`;
 	document.getElementById('nav-item-contato').innerHTML = `Contato`;
@@ -27,6 +28,7 @@ function languagePT() {
 
 // ENGLISH LOCALIZATION
 function languageEN() {
+	document.getElementById('flag').setAttribute('src', './img/flagus.jpg');
 	document.getElementById('lang-btn-txt').innerHTML = `Language`;
 	document.getElementById('nav-item-inicio').innerHTML = `Home`;
 	document.getElementById('nav-item-contato').innerHTML = `Contact`;
@@ -40,12 +42,10 @@ function languageEN() {
 function switchTheme(event) {
 	if (event.target.value === 'PT-BR') {
 		localStorage.setItem('theme', event.target.value);
-		document.getElementById('flag').setAttribute('src', './img/flag-br.svg');
 		languagePT();
 	} else {
 		document.documentElement.setAttribute('data-theme', 'EN-US');
 		localStorage.setItem('theme', event.target.value);
-		document.getElementById('flag').setAttribute('src', './img/flag-us.svg');
 		languageEN();
 	}
 }
@@ -59,11 +59,9 @@ if (currentTheme) {
 	document.documentElement.setAttribute('data-theme', currentTheme);
 	if (currentTheme === 'PT-BR') {
 		toggleSwitch.selected === 'PT-BR';
-		document.getElementById('flag').setAttribute('src', './img/flag-br.svg');
 		languagePT();
 	} else {
 		toggleSwitch.selected === 'EN-US';
-		document.getElementById('flag').setAttribute('src', './img/flag-us.svg');
 		languageEN();
 	}
 }
